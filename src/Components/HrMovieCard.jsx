@@ -8,7 +8,7 @@ function HrMovieCard({movie}) {
     className='w-[110px] md:w-[260px] rounded-lg
     hover:border-[3px] border-gray-400 cursor-pointer
     '/>
-    <h2 className='w-[110px] md:w-[260px] text-white
+    <h2 className='w-[110px] text-[10px] md:text-[15px] md:w-[260px] text-white
     mt-2'>{movie.title}</h2>
     </section>
   )

@@ -7,9 +7,9 @@ const GenreMovieList = () => {
     <div>{
     GenereList.genere.map((item,i)=>i<5&&(
          
-            <div className='p-8 px-8 ms:px-16' key={item.id}>
+            <div className='p-8 px-8 ms:px-16' key={item.id+3}>
                 <h2 className='text-[20px]  text-white font-bold'>{item.name}</h2>
-                <MovieList genereId={item.id} index={i}/>
+                <MovieList genereId={item.id} index_={i}/>
             </div>
         
     ))

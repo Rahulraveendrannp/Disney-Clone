@@ -46,10 +46,10 @@ const Header = () => {
             <HeaderItem  name={''} Icon={item.icon} key={item.name} />
         ))}
         </div>
-    <div className="md:hidden cursor-pointer" onClick={()=>setToggle(!toggle)}>
+    <div className="md:hidden cursor-pointer " onClick={()=>setToggle(!toggle)}>
         
             <HeaderItem  name={""} Icon={HiDotsVertical}   />
-         { toggle && <div className="absolute mt-3 border-[1px] p-3 px-5 py-4 border-gray-700 bg-slate-900 ">
+         { toggle && <div className="absolute right-2 mt-3 border-[1px] p-3 px-5 py-4 border-gray-700 bg-slate-900">
         {menu.map((item,i)=>i>2&&(
             <HeaderItem  name={item.name} Icon={item.icon} key={item.name} />
         ))}
